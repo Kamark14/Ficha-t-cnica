@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica Essence Care</title>
+    <link rel="stylesheet" href="https://cdnj.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #949494;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .dropdown-container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .dropdown-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            margin-bottom: 20px;
+        }
+
+        .ul-card {
+            margin-left: 10px;
+        }
+
+        .dropdown-header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-header:hover {
+            background-color: #f9f9f9;
+        }
+
+        .dropdown-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .dropdown-icon {
+            font-size: 1rem;
+            color: #666;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            padding: 0 20px;
+        }
+
+        .dropdown-text {
+            color: #555;
+            line-height: 1.6;
+            padding: 0 0 20px 0;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition:
+                opacity 0.3s ease 0.15s,
+                transform 0.3s ease 0.15s;
+        }
+
+        /* Estado aberto */
+        .dropdown-card.active .dropdown-content {
+            max-height: 1000px;
+            /* Ajuste conforme necessário para seu conteúdo */
+        }
+
+        .dropdown-card.active .dropdown-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .dropdown-card.active .dropdown-icon {
+            transform: rotate(180deg);
+        }
+
+        .btn-1 {
+            border: none;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .btn-1 a{
+            text-decoration: none;
+            color: black;    
+            font-size: 1.2rem;
+        }
+
+        .btn-1:hover {
+            background-color: #e2e2e2;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .dropdown-header {
+                padding: 16px;
+            }
+
+            .dropdown-title {
+                font-size: 1.1rem;
+            }
+
+            .dropdown-content {
+                padding: 0 16px;
+            }
+
+            .dropdown-text {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dropdown-header {
+                padding: 14px;
+            }
+
+            .dropdown-title {
+                font-size: 1rem;
+            }
+
+            .dropdown-content {
+                padding: 0 14px;
+            }
+
+            .dropdown-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown-container">
+        <div class="dropdown-card">
+            <button class="dropdown-header">
+                <span class="dropdown-title">Sabonete Líquido Facial
+                </span>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content">
+                <p class="dropdown-text">
+                <h3>Base:</h3>
+                <ul class="ul-card">
+                    <br>
+                    <li>Água purificada </li>
+                    <br>
+                    <li>Lauril éter sulfato de sódio </li>
+                    <br>
+                    <li>Cocamida DEA </li>
+                    <br>
+                    <li>Propilenoglicol</li>
+                    <br>
+                    <li>Cloreto de sódio</li>
+                    <br>
+                </ul>
+
+                <h3>Ingredientes Finais:</h3>
+
+                <ul class="ul-card">
+                    <br>
+                    <li>Extrato glicólico de Aloe vera</li>
+                    <br>
+                    <li>Glicerina</li>
+                    <br>
+                    <li>Extrato de Camomila</li>
+                    <br>
+                    <li>Extrato de Chá Verde</li>
+                    <br>
+                    <li>D-pantenol</li>
+                    <br>
+                    <li>Fragrância</li>
+                    <br>
+                    <li>Conservante</li>
+                    <br>
+                    <li>Anfótero</li>
+                    <br>
+                </ul>
+
+                <h3>Modo de Usar:</h3>
+                <br>
+                Aplique o sabonete líquido no rosto umedecido, massageando suavemente com movimentos circulares.
+                Enxágue com água morna. Use duas vezes ao dia (manhã e noite) para uma limpeza profunda e suave.
+                <br>
+                </p>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown-card">
+            <button class="dropdown-header">
+                <span class="dropdown-title"> Esfoliante Facial em Gel
+                </span>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content">
+                <p class="dropdown-text">
+                <h3>Base:</h3>
+                <ul class="ul-card">
+                    <br>
+                    <li>Carbopol</li>
+                    <br>
+                    <li>Propilenoglicol</li>
+                    <br>
+                    <li>Álcool etílico</li>
+                    <br>
+                    <li>Água purificada</li>
+                    <br>
+
+                    <h3>Ingredientes Finais:</h3>
+                    <br>
+                    <li>Glicerina</li>
+                    <br>
+                    <li>Extrato glicólico de Aloe vera</li>
+                    <br>
+                    <li>Extrato de Camomila</li>
+                    <br>
+                    <li>Extrato de Chá Verde</li>
+                    <br>
+                    <li>D-pantenol</li>
+                    <br>
+                    <li>Microquartz</li>
+                    <br>
+                    <li>Ácido salicílico</li>
+                    <br>
+                    <li>Fragrância</li>
+                    <br>
+                    <li>Conservante</li>
+                    <br>
+
+                    <h3>Modo de Usar:</h3>
+                    <br>
+                    Aplique uma pequena quantidade sobre o rosto úmido, massageando suavemente com movimentos circulares
+                    para esfoliar a pele. Enxágue bem com água morna. Use 1 a 2 vezes por semana, conforme necessário.
+                    Evite o uso em peles sensíveis ou irritadas.
+                </ul>
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown-card">
+            <button class="dropdown-header">
+                <span class="dropdown-title">Hidratante Facial em Gel
+                </span>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content">
+                <p class="dropdown-text">
+                <h3>Base:</h3>
+
+                <ul class="ul-card">
+                    <br>
+                    <li>Carbopol</li>
+                    <br>
+                    <li>Propilenoglicol</li>
+                    <br>
+                    <li>Álcool etílico</li>
+                    <br>
+                    <li>Água purificada</li>
+                    <br>
+
+                    <h3>Ingredientes Finais:</h3>
+                    <br>
+                    <li>Glicerina</li>
+                    <br>
+                    <li>Extrato glicólico de Aloe vera</li>
+                    <br>
+                    <li>D-pantenol</li>
+                    <br>
+                    <li>Extrato de Camomila</li>
+                    <br>
+                    <li>Extrato de Chá Verde</li>
+                    <br>
+                    <li>Fragrância</li>
+                    <br>
+                    <li>Conservante</li>
+                    <br>
+
+                    <h3>Modo de Usar:</h3>
+                    <br>
+                    Aplique uma pequena quantidade do hidratante no rosto limpo e seco, massageando suavemente até
+                    completa absorção. Use de manhã e à noite para manter a pele hidratada e suave.
+                </ul>
+                </p>
+                <br>
+            </div>
+        </div>
+        <button class="btn-1"><a href="Img/Composicao_Cosmeticos_Final.pdf" target="_blank">Composição</a></button>
+    </div>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownHeaders = document.querySelectorAll('.dropdown-header');
+
+        dropdownHeaders.forEach(header => {
+            header.addEventListener('click', function () {
+                const card = this.parentElement;
+                card.classList.toggle('active');
+
+                // Fecha outros dropdowns abertos (opcional)
+                dropdownHeaders.forEach(otherHeader => {
+                    if (otherHeader !== header) {
+                        otherHeader.parentElement.classList.remove('active');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</html>
